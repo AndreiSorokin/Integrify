@@ -4,7 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-commerce</title>
+    <title>myRirlw</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>A main header here</h1>
+      <nav>
+        <ul role="tree">
+          <li tabindex="0" role="treeitem">Store</li>
+          <li tabindex="0" role="treeitem">Gallery</li>
+          <li tabindex="0" role="treeitem">Contacts</li>
+          <li tabindex="0" role="treeitem">About</li>
+        </ul>
+      </nav>
+      <form>
+        <label for="username">Username: </label>
+        <input id="username" type="text" placeholder="Username" aria-describedby="username-description">
+        <div id="username-description">Username input</div>
+        <label for="password">Password: </label>
+        <input id="password" type="password" placeholder="Password" aria-describedby="password-description">
+        <div id="password-description">Password input</div>
+        <button aria-describedby="login-description">Log in</button>
+        <div id="login-description">Login description</div>
+      </form>
+    </header>
+    <main>
+      <section>
+        <div tabindex="1" aria-label="treelabel">Header of the section</div>
+        <h3 id="treelabel">Header of the section</h3>
+        <ul role="tree" aria-labelledby="treelabel">
+          <li tabindex="1" role="treeitem">Element1</li>
+          <li tabindex="1" role="treeitem">Element2</li>
+          <li tabindex="1" role="treeitem">Element3</li>
+        </ul>
+      </section>
+      <article aria-labelledby="product-header" aria-describedby="product-article" role="article">
+        <h3 id="product-header">Read more about products</h3>
+        <p tabindex="2" id="product-article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit sequi cumque labore ipsum, voluptates nisi dolorem hic laudantium aliquid sapiente animi tenetur dolores voluptatum assumenda optio inventore possimus! Dolorum, explicabo.</p>
+      </article>
+    </main>
+    <footer>
+      <ul>
+        <li>
+            <address role="address">The address</address>
+            <div tabindex="3">On a map:</div>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14167.325815180564!2d13.266339576363855!3d68.08447224692922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45de1730556b1149%3A0xefc4155372e86615!2sMolneva%20Waterfall!5e0!3m2!1sen!2sfi!4v1706004750631!5m2!1sen!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </li>
+        <li tabindex="4">Contacts</li>
+        <li tabindex="5">Support</li>
+      </ul>
+      <table tabindex="6" role="table" aria-label="User Information">
+        <thead>
+            <tr tabindex="7" role="row">
+                <th role="columnheader">Country</th>
+                <th role="columnheader">Name</th>
+                <th role="columnheader">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr tabindex="8" role="row">
+                <td role="cell">Finland</td>
+                <td role="cell">The name</td>
+                <td role="cell">email@email.email</td>
+            </tr>
+            <tr tabindex="9" role="row">
+                <td role="cell">Norway</td>
+                <td role="cell">The name</td>
+                <td role="cell">email@email.email</td>
+            </tr>
+        </tbody>
+      </table>
+    </footer>
+  </body>
 </html>
