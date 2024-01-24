@@ -190,6 +190,6 @@ th {
 
 @media screen and (max-width: 1400px) {
    .grid-container {
-      grid-template-columns: .9fr;
+      grid-template-columns: 1fr;
    }
 }
