@@ -86,7 +86,7 @@ main {
 }
 main .main-title {
   color: rgb(31, 31, 31);
-  font-size: 1.5em;
+  font-size: 2.5em;
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
@@ -115,11 +115,14 @@ main .main-title {
 main section {
   margin-bottom: 5vh;
 }
-main .section-list {
-  margin: 1vh 0;
+main .section-text {
+  width: 40vw;
+  margin: 0 auto;
+  font-size: 24px;
   color: rgb(58, 57, 57);
 }
 main .product-header {
+  font-size: 2rem;
   color: rgb(31, 31, 31);
 }
 main .grid-container {
@@ -145,6 +148,15 @@ main .grid-item .image__item {
 }
 main .grid-item:hover {
   transform: scale(1.05);
+}
+main .grid-item .grid-container__button {
+  background-color: transparent;
+  border: 1px solid rgb(58, 57, 57);
+  border-radius: 5px;
+  padding: 5px;
+  color: rgb(58, 57, 57);
+  width: 5vw;
+  margin-top: 2vh;
 }
 
 footer {
@@ -224,6 +236,9 @@ footer th {
     bottom: 1%;
     left: 10vw;
   }
+  main .grid-item .grid-container__button {
+    width: 10vw;
+  }
   @keyframes typing {
     from {
       width: 0;
@@ -296,6 +311,9 @@ footer th {
   }
   footer .footer-info {
     transform: translate(25vw, 20px);
+  }
+  main .grid-item .grid-container__button {
+    width: 15vw;
   }
   @keyframes typing {
     from {

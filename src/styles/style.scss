@@ -81,7 +81,7 @@ main{
    text-align: center;
    .main-title {
       color: variables.$header-color;
-      font-size: 1.5em;
+      font-size: 2.5em;
       overflow: hidden;
       white-space: nowrap;
       margin: 0 auto;
@@ -112,12 +112,15 @@ main{
       margin-bottom: 5vh;
    }
 
-   .section-list {
-      margin: 1vh 0;
+   .section-text {
+      width: 40vw;
+      margin: 0 auto;
+      font-size: 24px;
       color: variables.$dark-color;
    }
    
    .product-header{
+      font-size: 2rem;
       color: variables.$header-color;
    }
    
@@ -144,6 +147,10 @@ main{
       }
       &:hover {
          transform: scale(1.05);
+      }
+      .grid-container__button{
+         @include mixins.lining;
+         margin-top: 2vh;
       }
    }
 }
@@ -235,6 +242,9 @@ footer{
      bottom: 1%;
      left: 10vw;
    }
+   .grid-container__button{
+      width: 10vw;
+   }
    @keyframes typing {
      from {
        width: 0;
@@ -307,6 +317,9 @@ footer{
    }
    footer .footer-info {
      transform: translate(25vw, 20px);
+   }
+   .grid-container__button{
+      width: 15vw;
    }
    @keyframes typing {
      from {
